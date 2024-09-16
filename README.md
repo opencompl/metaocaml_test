@@ -1,2 +1,9 @@
 # metaocaml_test
-Testing things in metaocaml
+
+To run the experiments:
+```
+make all
+make run
+```
+
+CCVector.ml comes from the `containers` library.

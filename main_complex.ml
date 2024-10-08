@@ -38,8 +38,9 @@ let problematic x y =
 (* We don't want to optimize `b`, as we want to keep the intermediate result `a`*)
 
 let problematic2 c x1 y1 x2 y2 =
-  let a = cmul x y in
-  let b = if c then norm a else norm a in
-  foo b
+  let a = cmul x1 y1 in
+  let b = cmul x2 y2 in
+  if c then norm a else norm b
+(* We don't know which branch is being executed, so staging this code is hard *)
 
 

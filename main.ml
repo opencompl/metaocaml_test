@@ -1,7 +1,8 @@
 #use "topfind"
-open OptVectorData
+open OptComplex;;
+open OptVectorData;;
 #use "CCVector.ml"
-open Runcode
+open Runcode;;
 
 (*
 type 'a opt_vector =
@@ -61,10 +62,3 @@ let prog2 () =
 (* csp_get_opt_4 csp_vec_3 (((csp_length_2 csp_vec_1) - 0) - 1)>. *)
 
 let _ = prog1 ()
-
-push p x;
-if a then begin
-  let y = pop p;
-end else begin
-  let y = pop p;
-end
